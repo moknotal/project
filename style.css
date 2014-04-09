@@ -1,0 +1,386 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-image: url(img/firestock_wood_texture_03_09092013.jpg);
+	background-size: cover;
+}
+.main {
+	width:1100px;;
+	height:100%;
+	margin:10px auto;
+	border:1px solid #000;
+	background-image: url(img/top.jpg);
+	background-repeat: repeat;
+}
+.header {
+	width:100%;
+	height:360px;
+	/*border:1px solid red;*/
+}
+.logo {
+	width:350px;
+	margin:2% 0 4% 2%;
+}
+.logo img{
+	-webkit-box-shadow: -4px 4px 5px 0px rgba(41, 80, 50, 0.75);
+-moz-box-shadow:    -4px 4px 5px 0px rgba(41, 80, 50, 0.75);
+box-shadow:         -4px 4px 5px 0px rgba(41, 80, 50, 0.75);
+}
+.references {
+	width:100%;
+	height:40px;
+	border-top:3px double orange;
+	border-bottom:3px double orange;
+	background-color: none;
+	background-color: #FFFAFA;
+}
+.references ul{
+	display: flex;
+ 	flex-direction:row;
+ 	justify-content:space-around;
+}
+.references ul li{
+	list-style-type: none;
+	width:11%;
+	height: 26px;
+	margin-top: 10px;
+	margin-left:1%;
+	white-space: nowrap;
+	text-align: center;
+	 -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box; /* Ширина блока с полями */
+}
+.references ul li a{
+	text-decoration: none;
+	font-family: "Century Gothic",Tahoma,Arial;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+	color:#1C1C1C;
+	font-weight: bold;
+	}
+	.references ul li a:link{
+	text-decoration: none;
+	font-family: "Century Gothic",Tahoma,Arial;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+	color:#1C1C1C;
+	}
+.references ul li a:visited{
+	text-decoration: none;
+	font-family: "Century Gothic",Tahoma,Arial;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+	color:#1C1C1C;
+	}
+	.references ul li a:hover{
+	text-decoration: none;
+	font-family: "Century Gothic",Tahoma,Arial;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+	color:#696969;
+	}
+.mainbox{
+	width:100%;
+	height:800px;
+	 -moz-box-sizing: border-box;  Для Firefox   
+    box-sizing: border-box; /* Ширина блока с полями */
+}
+/***********************************************/
+.furniture{
+
+	width:100%;
+	height:88%;
+	border-top:2px dashed #545454;
+	border-bottom:2px dashed #545454;
+		 -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box; /* Ширина блока с полями */
+
+}
+.furniture ul {
+	display: flex;
+ 	flex-direction:row;
+ 	
+ 	justify-content:space-around;
+}
+.furniture ul li{
+	align-self:auto;
+	list-style-type: none;
+}
+.furniture > h1 {
+	text-align: center;
+	margin-top: 5px;
+}
+/*************************************** mebel*/
+.forimg{
+	width:380px;
+	height:260px;
+	overflow: hidden;
+	border-radius:10px;
+	margin-left: 20px;
+	margin-top: 20px;
+	
+}
+.characteristics{
+	/*border:1px solid red;*/
+	margin-left: 20px;
+	margin-top: 20px;
+	width:40%;
+	flex-direction:column !important;
+}
+.characteristics ul, .measure ul{
+	/*border:1px green solid;*/
+	flex-direction:column !important;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.measure ul li p{
+	padding:2%;
+}
+.characteristics ul li, .measure ul li{
+	margin-top: 20px;
+	list-style-type: none;
+}
+.price{
+	text-align: right;
+	margin-right: 8%;
+	font-family:  "isocpeurregular", Arial;
+	font-weight: bold;
+	font-size: 24px;
+	color:#0000FF;
+}
+/***************************************/
+.togglerleft{
+	/*width:50px;
+	height:700px;
+	margin-left: 10px;
+	background: #EEE url(img/arrow_left.png) center center no-repeat;
+	cursor: pointer;
+	 -moz-box-sizing: border-box; /* Для Firefox */  
+    /*box-sizing: border-box;*/ /* Ширина блока с полями */
+    /*border: 5px outset #98bf21; */
+    height: 700px;
+background: #EEE url(img/arrow_left.png)  center no-repeat;
+cursor: pointer;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+position: absolute;
+width: 50px;
+z-index: 999;
+background-color: rgba(0, 0, 0, 0.04);
+
+
+}
+.togglerleft:hover{
+	  height: 700px;
+background: #EEE url(img/arrow_left.png) center no-repeat;
+cursor: pointer;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+position: absolute;
+width: 50px;
+z-index: 999;
+background-color: rgba(0, 0, 0, 0.23);
+}
+.togglerright{
+	height: 700px;
+background: #EEE url(img/arrow_right.png) center no-repeat;
+cursor: pointer;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin-left: -50px;
+position: absolute;
+width: 50px;
+z-index: 999;
+background-color: rgba(0, 0, 0, 0.04);
+}
+.togglerright:hover{
+	height: 700px;
+background: #EEE url(img/arrow_right.png) center no-repeat;
+cursor: pointer;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin-left: -50px;
+position: absolute;
+width: 50px;
+z-index: 999;
+background-color: rgba(0, 0, 0, 0.23);
+}
+.box2{
+	width:100%;
+	height:700px;
+	/*border:2px solid green;*/
+	position: relative;
+	overflow: hidden;
+	 -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box; /* Ширина блока с полями */
+}
+.wrap{
+	position: absolute;
+left: 0;
+top: 0;
+white-space: nowrap;
+/*border: 1px solid rgb(255, 0, 0);*/
+
+height: 100%;
+-webkit-transition: left 0.8s;
+-o-transition: left 0.8s;
+-moz-transition: left 0.8s;
+transition: left 0.8s;
+
+}
+.item{
+	width:1100px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	/*border:1px solid #000;*/
+}
+.item h2 {
+	margin-top: 5%;
+	color: #0000FF;
+	text-align: center;
+	font-family: Arial, Tahoma, Geneva, sans-serif;
+}
+.item h2 a{
+	text-decoration: none;
+}
+.item h2 a:link{
+	color: #363636;
+}
+.item h2 a:visited{
+	color: #363636;
+}
+.item h2 a:hover{
+	color: #545454;
+}
+.item img{
+	width:80%;
+	height:400px;
+	margin-top: 10%;
+}
+/***********************************************/
+.caption h1{
+	text-align: center;
+	font-size: 18px;
+	font-family:arial,sans-serif;
+}
+.text_area{
+	padding:50px;
+	list-style-position:inside;
+	font-family: arial,sans-serif;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.text_area h2{
+	margin-top:10px;
+}
+.text_area ol li, .text_area ul li{
+	list-style-position:inside;
+	font-family: arial,sans-serif;
+	font-size: 14px;
+	margin-top: 10px;
+}
+.text_area ol li ul li{
+	list-style-position:inside;
+	margin-left: 20px;
+}
+.text_area span{
+	font-weight: bold;
+}
+.text_area p {
+	font-family: arial,sans-serif;
+	font-size: 14px;
+	margin-top: 30px;
+}
+.text_area a{
+	display:block;
+	width:230px;
+	margin:5% 0 5% 5%;
+	color: #58595B;
+text-decoration: underline;
+
+}
+.text_area a:hover{
+	display:block;
+	width:230px;
+	margin:5% 0 5% 5%;
+	color: #58595B;
+text-decoration: none;
+}
+/************************************************/ /*bedroom_list*/
+.bedroom_list{
+	width:23%;
+	height:17%;
+	/*border:1px solid #F08080;*/
+	background-color: #D3D3D3;
+	margin-top: 5%;
+	text-align: center;
+-webkit-box-shadow: -4px 4px 15px 0px rgba(50, 50, 50, 0.57);
+-moz-box-shadow:    -4px 4px 15px 0px rgba(50, 50, 50, 0.57);
+box-shadow:         -4px 4px 15px 0px rgba(50, 50, 50, 0.57);
+}
+.bedroom_list img{
+	width:100%;
+	height:20%;
+}
+.bedroom_list a{
+	color:#1e2d6d;
+	font-family: Arial, Tahoma, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+.bedroom_list a:visited{
+	color:#1e2d6d;
+	font-family: Arial, Tahoma, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+}
+.footer{
+	width:98%;
+	height:30%;
+	border-top:3px solid #8B8989;
+	margin:0 auto;
+	margin-bottom: 2%;
+}
+.footer p{
+	margin-top: 5px;
+}
+.footer span{
+	font-weight: bold;
+}
+.con a{
+	color:#0000FF;
+	display: inline;
+	text-decoration: none;
+	margin:0;
+}
+.con a:hover{
+	color:#0000FF;
+	display: inline;
+	text-decoration: none;
+	margin:0;
+}
+.contacks {
+	width:70%;
+	border:1px solid #CFCFCF;
+	background-color: #F7F7F7;
+	margin:4% auto;
+	height: 15%;
+}
+.contacks ul{
+	display: flex;
+ 	flex-direction:row;
+ 	justify-content:space-around;
+ 	margin-top: 3%;
+}
+.contacks ul li{
+	width:48%;
+	margin-left: 1%;
+	list-style-type: none;
+}
